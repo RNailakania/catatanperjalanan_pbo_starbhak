@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\CatatanperjalananController;
+// use App\Http\Controllers\CatatanperjalananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +18,9 @@ use App\Http\Controllers\CatatanperjalananController;
 Route::get('/', function () {
     return view('dashboard');
 });
-Route::get('catatanperjalanan',[CatatanperjalananController::class, 'index'])->name('catatanperjalanan')->middleware('auth');
-Route::get('create',[CatatanperjalananController::class, 'create'])->name('create');
-Route::post('save',[CatatanperjalananController::class, 'store'])->name('simpan');
+// Route::get('catatanperjalanan',[CatatanperjalananController::class, 'index'])->name('catatanperjalanan')->middleware('auth');
+// Route::get('create',[CatatanperjalananController::class, 'create'])->name('create');
+// Route::post('save',[CatatanperjalananController::class, 'store'])->name('simpan');
 
 Route::get('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/loginproses',[LoginController::class, 'loginproses'])->name('loginproses');
