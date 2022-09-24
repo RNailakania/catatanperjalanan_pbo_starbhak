@@ -18,9 +18,8 @@ class AkunSeeder extends Seeder
         $user = [
             [
             'nik' => '808080',
-            'namalengkap' => 'kania',
-            'email' => 'admin@gmail,com',
-            'password' => bcrypt('kania123'),
+            'namalengkap' => 'admin',
+            'password' => bcrypt('admin123'),
             ]
             ];
             foreach ($user as $key => $value) {

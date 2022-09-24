@@ -27,10 +27,10 @@
       <div class="card-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="{{ route('loginproses') }}" method="post">
-        @csrf
+        <form action="/loginproses" method="post">
+          @csrf
           <div class="input-group mb-3">
-            <input type="nik" class="form-control" name="nik" placeholder="nik" required>
+            <input type="number" class="form-control" name="nik" placeholder="nik" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
